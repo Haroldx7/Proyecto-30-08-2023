@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(montañas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: #BDF2F2;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    color: #43B0CC;
+}
+
+
+a{
+    width: 15%;
+    min-width: 50px;
+    height: auto;
+    position: relative;
+    right: 35%;
+}
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #43B0CC;
+}
+
+.img-user{
+    width: 25%;
+    min-width: 50px;
+    height: auto;
+    position: relative;
+    left: 35%;
+}
+
+main{
+    width: 95%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+.card-user{
+    background-color: #43B0CC;
+    width: 25%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    border: 10px solid #0378A6;
+}
+
+.user-image{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.card-user-img{
+    width: 100%;
+    height: auto;
+}
+.box-info{
+    background-color: #0378A6;
+    width: 80%;
+    height: 150px;
+    color: #43B0CC;
+}
+
+.card-work{
+    background-color: #0378A6;
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #0378A6;
+    gap: 2%;
+    color: #43B0CC;
+}
+
+.box-title{
+    width: 95%;
+    height: 50px;
+    text-align: center;
+}
+
+.box-backg{
+    background-color: #43B0CC;
+    width: 95%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-coment{
+    background-color: #0378A6;
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.box-backg-user{
+    background-color: #43B0CC;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-backg-user{
+    width: 100%;
+    height: auto;
+}
+
+.box-coment-user{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.box-coment-text{
+    width: 100%;
+    height: 75%;
+}
+
+.box-posit-btn{
+    width: 100%;
+    height: 20%;
+}
+
+.box-btn{
+    background-color: #43B0CC;
+    width: 21%;
+    height: auto;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+    color: #0378A6;
+    border: 1px solid #0378A6;
+}
+
+.box-btn:hover{
+    width: 22%;
+    height: 25px;
+    padding: 3px;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .card-user{
+        width: 70%;
+    }
+
+    .card-work{
+        width: 95%;
+    }
+    .box-coment-text p{
+        font-size: 12px;
+        color: aqua;
+    }
+
+    .box-backg-user{
+        height: 50px;
+        right: 10px;
+    }
+}
